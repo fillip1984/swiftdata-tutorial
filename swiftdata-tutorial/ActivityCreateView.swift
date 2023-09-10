@@ -28,10 +28,12 @@ struct ActivityCreateView: View {
             TextField("Name", text: $activity.text)
                 .focused($focusedField, equals: .text)
 
+            // May not be the "apple way" but it works. Will figure this out once more tutorials on SwiftData appear. Idea came from: https://www.donnywals.com/providing-a-default-value-for-a-swiftui-binding/
             DatePicker("Choose a date",
-                       selection: $activity.end, displayedComponents: .date)
-
-//            Toggle("Important?", isOn: $item.isCritical)
+                       selection:
+                       Binding(get: {
+                           activity.end ?? .now
+                       }, set: { newValue in activity.end = newValue }), displayedComponents: <#T##DatePickerComponents#>.date)
 
             Button("Create") {
                 withAnimation {

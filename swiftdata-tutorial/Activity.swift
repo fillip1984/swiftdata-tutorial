@@ -13,13 +13,13 @@ class Activity {
 //    @Attribute(.unique)
 //    var id: String
     var createdAt: Date
-    var updatedAt: Date
+//    var updatedAt: Date
 
     var text: String
 
     // optional attributes for tracking start/end of activity
     var start: Date?
-    var end: Date
+    var end: Date?
 
     // attributes for outcome of activity
     var complete: Bool
@@ -29,16 +29,16 @@ class Activity {
     init(
         //        id: String = "new",
         createdAt: Date = .now,
-        updatedAt: Date = .now,
-        start: Date = .now,
-        end: Date = .now,
+//        updatedAt: Date = .now,
+        start: Date? = nil,
+        end: Date? = nil,
         text: String = "",
         complete: Bool = false,
         skip: Bool = false)
     {
 //        self.id = id
         self.createdAt = createdAt
-        self.updatedAt = updatedAt
+//        self.updatedAt = updatedAt
         self.start = start
         self.end = end
         self.text = text

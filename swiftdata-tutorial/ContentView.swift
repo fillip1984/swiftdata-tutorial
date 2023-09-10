@@ -41,13 +41,13 @@ struct ContentView: View {
                                 .font(.largeTitle)
                                 .bold()
                             // See: https://stackoverflow.com/questions/52393094/value-of-optional-type-date-not-unwrapped-did-you-mean-to-use-or-in
-//                            if let end = activity.end {
-//                                Text("\(end, format: Date.FormatStyle(date: .numeric, time: .shortened))")
-//                                    .font(.callout)
-//                            }
+                            if let end = activity.end {
+                                Text("\(end, format: Date.FormatStyle(date: .numeric, time: .shortened))")
+                                    .font(.callout)
+                            }
                             
-                            Text("\(activity.end, format: Date.FormatStyle(date: .numeric, time: .shortened))")
-                                .font(.callout)
+//                            Text("\(activity.end, format: Date.FormatStyle(date: .numeric, time: .shortened))")
+//                                .font(.callout)
                         }
                         
                         Spacer()

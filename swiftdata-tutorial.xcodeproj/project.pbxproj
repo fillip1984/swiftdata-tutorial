@@ -59,10 +59,10 @@
 		29E447F22AAE262600805BB7 /* swiftdata-tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				29E447F32AAE262600805BB7 /* swiftdata_tutorialApp.swift */,
-				29E447F52AAE262600805BB7 /* ContentView.swift */,
 				29E448042AAE3C7400805BB7 /* ActivityCreateView.swift */,
 				29E448062AAE3CB700805BB7 /* ActivityUpdateView.swift */,
+				29E447F32AAE262600805BB7 /* swiftdata_tutorialApp.swift */,
+				29E447F52AAE262600805BB7 /* ContentView.swift */,
 				29E448012AAE28F900805BB7 /* Activity.swift */,
 				29E447F72AAE262700805BB7 /* Assets.xcassets */,
 				29E447F92AAE262700805BB7 /* Preview Content */,
