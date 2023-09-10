@@ -33,7 +33,7 @@ struct ActivityCreateView: View {
                        selection:
                        Binding(get: {
                            activity.end ?? .now
-                       }, set: { newValue in activity.end = newValue }), displayedComponents: <#T##DatePickerComponents#>.date)
+                       }, set: { newValue in activity.end = newValue }), displayedComponents: .date)
 
             Button("Create") {
                 withAnimation {
